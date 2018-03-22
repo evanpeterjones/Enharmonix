@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enharmonix Acapella Official</title>
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+  /*#full{
+    display: none;
+  }*/
+  body {
+    background-color: black;
+    opacity: 1;
+    transition: 1s opacity;
+  }
+  h1 {
+    color: red;
+    font-size: 90px;
+    font-family: "Amatic SC", cursive;
+  }
+  h2 {
+    font-family: "Amatic SC", cursive;
+    color: purple;
+    font-family: purple
+  }
+  h3 {
+    font-family: "Amatic SC", cursive;
+    color: white;
+    font-family: purple
+  }
+  div {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .button {
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, purple 0%, red 100%);
+    border-image-slice: 1;
+    background: #000;
+    color: purple;
+    font-size: 2em;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: ;
+    font-family: "Amatic SC", cursive;
+    text-transform: uppercase;
+  }
+  .button:hover {
+    background-color: white;
+    background: linear-gradient(to left, red, purple);
+    color: black;
+  }
+  h4 {
+    color: white;
+    font-size : 40px;
+    font-family: "Amatic SC", cursive;
+  }
+  p {
+    font-size: 20px;
+    color: white;
+    font-family: "Amatic SC", cursive;
+  }
+  #aboutBody {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+  }
+  #membersBody {
+    margin-top: 50px;
+  }
+  .row {
+    text-align: center;
+    padding-left: 19%;
+    padding-right: 20%;
+  }
+  footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #0F0000;
+    text-align: center;
+  }
+  #pic {
+    width: 1.5%;
+    height: 1.5%;
+  }
+  .container {
+    display: inline-block;
+    text-align: center;
+  }
+  .manImg {
+    display: none;
+    transition: .5s background-color;
+  }
+  .hover-text:hover ~ .manImg {
+    display: block;
+    height: 500px;
+    width: auto;
+    transition-delay: .5s;
+  }
+  .mainImg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 500px;
+    width: auto;
+  }
+  </style>
+</head>
+<script>
+function showHide(shown, hidden1, hidden2, hidden3, hidden4, hidden5) {
+  document.getElementById(shown).style.display = "block";
+  document.getElementById(hidden1).style.display = "none";
+  document.getElementById(hidden2).style.display = "none";
+  document.getElementById(hidden3).style.display = "none";
+  document.getElementById(hidden4).style.display = "none";
+  document.getElementById(hidden5).style.display = "none";
+  return false;
+}
+window.onload=function() {
+  showHide('homeBody', 'aboutBody', 'membersBody', 'picsnvids', 'contact');
+}
+</script>
+<body>
+    <div id="full">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <h1 class="text-center">Enharmonix</h1>
+      <h2 class="text-center"></h2>
+      <div class="row">
+        <div class="col-xs-2">
+          <button onclick="showHide('homeBody', 'aboutBody', 'membersBody', 'picsnvids', 'contact')" class="btn btn-default button" id="about">Home</button>
+        </div>
+        <div class="col-xs-3">
+          <button onclick="showHide('aboutBody', 'homeBody', 'membersBody', 'picsnvids', 'contact')" class="btn btn-default button" id="about">About</button>
+        </div>
+        <div class="col-xs-2">
+          <button onclick="showHide('membersBody', 'homeBody', 'picsnvids', 'aboutBody', 'contact')" class="btn btn-default button" id="members">Members</button>
+        </div>
+        <div class="col-xs-3">
+          <button onclick="showHide('picsnvids', 'homeBody', 'membersBody', 'aboutBody', 'contact')" class="btn btn-default button" id="vid">Videos</button>
+        </div>
+        <div class="col-xs-2">
+          <button onclick="showHide('contactForm', 'homeBody', 'membersBody', 'aboutBody', 'picsnvids)" class="btn btn-default button" id="contactbutton">Contact</button>
+        </div>
+      </div>
+      <div id="full">
+        <div id="homeBody">
+          <img src="src/enx.jpg" class="mainImg"></img>
+        </div>
+        <div id="aboutBody">
+          <h3>Where it all started...</h3>
+          <p>In 2011, over a meal at Bojangles', two Appalachian State students created Enharmonix. The goal of this group was to strive for musical excellence while orienting themselves toward diversity and acceptance. </p>
+          <p>Today, ENX is proud to say we have accomplished the goals of our founders. Winning Best Overall Group and Best Co-Ed Group at Appalachian State's Acappellageddon consecutive years and going on to compete in the semi-finals for the ICCA's last year. Outside of competition and performance we pride ourselves in having fostered a meaningful relationship with many of the clubs and organizations at Appalachian and in the community alike.</p>
+          <p>We continue to set new goals and are looking forward to see what comes next.</p>
+          <p>We've been invited across state lines to perform for competitions, charity events, Weddings, and even for various events on college campuses. If you're interested in having us perform for you, please use this <a onclick="showHide('contactForm', 'homeBody', 'membersBody', 'aboutBody', 'picsnvids)">contact form</a>. Thank you.</p>
+        </div>
+        <div id="membersBody" class="text-center: true">
+          <div id="women">
+            <h2>Sopranos</h2>
+            <span class="container"><p class="hover-text">Alana Hughes</p><img class="manImg" src="src/alana.jpg"></span>
+            <span class="container"><p class="hover-text">Rayane Amrani</p><img class="manImg" src="src/rayane_gurl.jpg"></span>
+            <span class="container"><p class="hover-text">Zoe Dean</p><img class="manImg" src="src/zoe.jpg"></span>
+            <span class="container"><p class="hover-text">Elora Dash</p><img class="manImg" src="src/elora.jpg"></span>
+            <h2>Altos</h2>
+            <p>Lauren Small</p>
+            <p>Dakota Armstrong</p>
+            <p>Keira Massi</p>
+          </div>
+          <div id="men">
+            <h2>Tenors</h2>
+            <p>Kenton McCollum</p>
+            <p>Aaron Collins</p>
+            <p>Michah Wiggins</p>
+            <p>Charlie Austin-Zimmerman</p>
+            <h2>Basses</h2>
+            <p>Dovy Abarius</p>
+            <p>Jared Mark</p>
+            <p>Evan Jones</p>
+            <p>Will Way</p>
+          </div>
+        </div>
+        <div id="performancesBody">
+        </div>
+        <div id="picsnvids">
+          <p></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sCkxos-8FrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <script src="https://apis.google.com/js/platform.js"></script>
+          <div class="g-ytsubscribe" data-channelid="UCfuD-pdgNqdkBfbCmB5M8rg" data-layout="full" data-count="hidden"></div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dsUhLd4Hfc4?start=6" frameborder="0" allowfullscreen></iframe>
+          <a href="https://www.collegeaca.com/content/watch-as-enharmonix-takes-you-to-church-with-ultralight-beam"><p>Article about Ultralight Beam</p></a>
+          <p>be sure to follow us on social media for more videos</p>
+        </div>
+        <div id="contact">
+          <h1>contact form goes here</h1>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p><b>Enharmonix</b> 2017</p>
+      <p style="font-size: 13px">Page by Evan Jones</p>
+      <a href="https://www.facebook.com/enharmonix"><img src="src/face.png" id="pic"></img></a>
+      <a href="https://twitter.com/asu_enharmonix"><img src="src/twit.png" id="pic"></img></a>
+      <a href="https://www.instagram.com/enharmonix/"><img src="src/insta.png" id="pic"></img></a>
+    </footer>
+  </body>
+  </html>
