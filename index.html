@@ -168,166 +168,175 @@ window.onload=function() {
 }
 </script>
 <body>
-  <div id="full">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <h1 class="text-center">Enharmonix</h1>
-    <h2 class="text-center"></h2>
-    <div class="row">
-      <div class="col-xs-2 col-lg-2">
-        <button onclick="showHide('homeBody', 'aboutBody', 'membersBody', 'picsnvids', 'contact')" class="btn btn-default button" id="about">Home</button>
-      </div>
-      <div class="col-xs-3 col-lg-3">
-        <button onclick="showHide('aboutBody', 'homeBody', 'membersBody', 'picsnvids', 'contact')" class="btn btn-default button" id="about">About</button>
-      </div>
-      <div class="col-xs-2 col-lg-2">
-        <button onclick="showHide('membersBody', 'homeBody', 'picsnvids', 'aboutBody', 'contact')" class="btn btn-default button" id="members">Members</button>
-      </div>
-      <div class="col-xs-3 col-lg-3">
-        <button onclick="showHide('picsnvids', 'homeBody', 'membersBody', 'aboutBody', 'contact')" class="btn btn-default button" id="vid">Videos</button>
-      </div>
-      <div class="col-xs-2 col-lg-2">
-        <button onclick="showHide('contactForm', 'homeBody', 'membersBody', 'aboutBody', 'picsnvids)" class="btn btn-default button" id="contactbutton">Contact</button>
-      </div>
+  <!--
+  why are you looking at this, it's a mess. I know it's a mess, but it's a lovely mess––literally me.
+-->
+<div id="full">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <h1 class="text-center">Enharmonix</h1>
+  <h2 class="text-center"></h2>
+  <div class="row">
+    <div class="col-xs-2 col-lg-2">
+      <button onclick="showHide('homeBody', 'aboutBody', 'membersBody', 'picsnvids', 'contact')" class="btn btn-default button" id="about">Home</button>
     </div>
-    <div id="full">
-      <div id="homeBody">
-        <img src="src/enx.jpg" class="mainImg"></img>
-      </div>
-      <div id="aboutBody" style="display:hidden">
-        <h3>Where it all started...</h3>
-        <p>In 2011, over a meal at Bojangles', two Appalachian State students created Enharmonix. The goal of this group was to strive for musical excellence while orienting themselves toward diversity and acceptance. </p>
-        <p>Today, ENX is proud to say we have accomplished the goals of our founders. Winning Best Overall Group and Best Co-Ed Group at Appalachian State's Acappellageddon consecutive years and going on to compete in the semi-finals for the ICCA's last year. Outside of competition and performance we pride ourselves in having fostered a meaningful relationship with many of the clubs and organizations at Appalachian and in the community alike.</p>
-        <p>We continue to set new goals and are looking forward to see what comes next.</p>
-        <p>We've been invited across state lines to perform for competitions, charity events, Weddings, and even for various events on college campuses. If you're interested in having us perform for you, please use this <a onclick="showHide('contactForm', 'homeBody', 'membersBody', 'aboutBody', 'picsnvids)">contact form</a>. Thank you.</p>
-      </div>
-      <div id="membersBody" style="display:hidden">
-        <h2>Sopranos</h2>
-        <div class="row">
-          <div class="container col-sm-6">
-            <img src="src/alana.jpg" alt="Avatar" class="image" style="width:100%">
-            <div class="middle">
-              <div class="text">Alana Hughes</div>
-            </div>
-          </div>
-          <div class="container col-sm-6">
-            <img src="src/rayane_gurl.jpg" alt="Avatar" class="image" style="width:100%">
-            <div class="middle">
-              <div class="text">Rayane Amrani</div>
-            </div>
-          </div>
-        </div>
-        <p></p>
-        <div class="row">
-          <div class="container col-sm-6">
-            <img src="src/zoe.jpg" alt="Avatar" class="image" style="width:100%">
-            <div class="middle">
-              <div class="text">Zoe Dean</div>
-            </div>
-          </div>
-          <div class="container col-sm-6">
-            <img src="src/elora.jpg" alt="Avatar" class="image" style="width:100%">
-            <div class="middle">
-              <div class="text">Elora Dash</div>
-            </div>
-          </div>
-        </div>
-        <h2>Altos</h2>
-        <div class="row">
-          <div class="container col-sm-6">
-            <img src="src/kiera.jpg" alt="Avatar" class="image" style="width:100%">
-            <div class="middle">
-              <div class="text">Kiera Massi</div>
-            </div>
-          </div>
-          <div class="container col-sm-6">
-            <img src="src/lauren.jpg" alt="Avatar" class="image" style="width:100%">
-            <div class="middle">
-              <div class="text">Lauren Small</div>
-            </div>
-          </div>
-          <h2>Tenors</h2>
-          <div class="row">
-            <div class="container col-sm-6">
-              <img src="src/aaron.jpg" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="text">Aaron Collins</div>
-              </div>
-            </div>
-            <div class="container col-sm-6">
-              <img src="src/kenton.jpg" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="text">Kenton McCollum</div>
-              </div>
-            </div>
-          </div>
-          <p></p>
-          <div class="row">
-            <div class="container col-sm-6">
-              <img src="src/micah.jpg" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="text">Micah Wiggins</div>
-              </div>
-            </div>
-            <div class="container col-sm-6">
-              <img src="src/charlie.jpg" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="text">Charlie Austin-Zimmerman</div>
-              </div>
-            </div>
-          </div>
-          <h2>Basses</h2>
-          <div class="row">
-            <div class="container col-sm-6">
-              <img src="src/dovy.jpg" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="text">Dovydas Abarius</div>
-              </div>
-            </div>
-            <div class="container col-sm-6">
-              <img src="src/evan.jpg" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="text">Evan Jones</div>
-              </div>
-            </div>
-          </div>
-          <p></p>
-          <div class="row">
-            <div class="container col-sm-6">
-              <img src="src/will.jpg" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="text">Will Way</div>
-              </div>
-            </div>
-            <div class="container col-sm-6">
-              <img src="src/jared.jpg" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="text">Jared Mark</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="col-xs-3 col-lg-3">
+      <button onclick="showHide('aboutBody', 'homeBody', 'membersBody', 'picsnvids', 'contact')" class="btn btn-default button" id="about">About</button>
     </div>
-    <div id="picsnvids">
-      <p></p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/sCkxos-8FrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <script src="https://apis.google.com/js/platform.js"></script>
-      <div class="g-ytsubscribe" data-channelid="UCfuD-pdgNqdkBfbCmB5M8rg" data-layout="full" data-count="hidden"></div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dsUhLd4Hfc4?start=6" frameborder="0" allowfullscreen></iframe>
-      <a href="https://www.collegeaca.com/content/watch-as-enharmonix-takes-you-to-church-with-ultralight-beam"><p>Article about Ultralight Beam</p></a>
-      <p>be sure to follow us on social media for more videos</p>
+    <div class="col-xs-2 col-lg-2">
+      <button onclick="showHide('membersBody', 'homeBody', 'picsnvids', 'aboutBody', 'contact')" class="btn btn-default button" id="members">Members</button>
     </div>
-    <div id="contact" style="display:hidden">
-      <h1>contact form goes here</h1>
+    <div class="col-xs-3 col-lg-3">
+      <button onclick="showHide('picsnvids', 'homeBody', 'membersBody', 'aboutBody', 'contact')" class="btn btn-default button" id="vid">Videos</button>
+    </div>
+    <div class="col-xs-2 col-lg-2">
+      <button onclick="window.open('mailto:enharmonixacapella@gmail.com')"class="btn btn-default button" id="contactbutton">Email Us</button>
     </div>
   </div>
-</div>
-<footer>
-  <p><b>Enharmonix</b> 2017</p>
-  <p style="font-size: 13px">Page by Evan Jones</p>
-  <a href="https://www.facebook.com/enharmonix"><img src="src/face.png" id="pic"></img></a>
-  <a href="https://twitter.com/asu_enharmonix"><img src="src/twit.png" id="pic"></img></a>
-  <a href="https://www.instagram.com/enharmonix/"><img src="src/insta.png" id="pic"></img></a>
-</footer>
-</body>
-</html>
+  <div id="full">
+    <div id="homeBody" class="accordion">
+      <img src="src/enx.jpg" class="mainImg"></img>
+    </div>
+    <div id="aboutBody" class="accordion" style="display:hidden">
+      <h4>Where it started...</h4>
+      <p>In 2011, two Appalachian State students came together to create Enharmonix. The goal being to strive for musical excellence with a mind toward diversity and acceptance. </p>
+      <br>
+      <h4>Where we are now...</h4>
+      <p>Today, ENX has won awards for <i>"Best Overall Group"</i> and <i>"Best Co-Ed Group"</i> at Appalachian State's <a href="http://theappalachianonline.com/2017/11/13/acappellageddon-celebrates-10-years/">Acappellageddon</a> consecutive years as well as opening for <a href="https://twitter.com/UsTheDuo/status/930843581476093952">Us The Duo</a>, competing in the semi-finals for the 2017 & 2018 ICCA's, and receiving awards for "<i>Outstanding Composition</i>", "<i>Outstanding Beatboxer</i>", and, "<i>Outstanding Vocalist</i>".</p>
+      <br>
+      <h4>Where we're headed...</h5>
+        <p>Outside of competition and performance we pride ourselves in having fostered meaningful relationships with many of the clubs and organizations at Appalachian and in the broader acapella community alike.</p>
+        <p>We've performed at competitions, charity events, weddings, and various events on college campuses. So, if you're interested in having us perform for you, feel free to send us an email.
+          <p>We continue to set new goals and are looking forward to see what we can do next.</p>
+          <hr size=7><address><a href="mailto:enharmonixacapella@gmail.com">Contact Us</address></a>
+        </div>
+        <div id="membersBody" class="accordion" style="display:hidden">
+          <h2>Sopranos</h2>
+          <div class="row">
+            <div class="container col-sm-6">
+              <img src="src/alana.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">Alana Hughes</div>
+              </div>
+            </div>
+            <div class="container col-sm-6">
+              <img src="src/rayane_gurl.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">Rayane Amrani</div>
+              </div>
+            </div>
+          </div>
+          <p></p>
+          <div class="row">
+            <div class="container col-sm-6">
+              <img src="src/zoe.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">Zoe Dean</div>
+              </div>
+            </div>
+            <div class="container col-sm-6">
+              <img src="src/elora.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">Elora Dash</div>
+              </div>
+            </div>
+          </div>
+          <h2>Altos</h2>
+          <div class="row">
+            <div class="container col-sm-6">
+              <img src="src/kiera.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">Kiera Massi</div>
+              </div>
+            </div>
+            <div class="container col-sm-6">
+              <img src="src/lauren.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">Lauren Small</div>
+              </div>
+            </div>
+            <h2>Tenors</h2>
+            <div class="row">
+              <div class="container col-sm-6">
+                <img src="src/aaron.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Aaron Collins</div>
+                </div>
+              </div>
+              <div class="container col-sm-6">
+                <img src="src/kenton.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Kenton McCollum</div>
+                </div>
+              </div>
+            </div>
+            <p></p>
+            <div class="row">
+              <div class="container col-sm-6">
+                <img src="src/micah.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Micah Wiggins</div>
+                </div>
+              </div>
+              <div class="container col-sm-6">
+                <img src="src/charlie.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Charlie Austin-Zimmerman</div>
+                </div>
+              </div>
+            </div>
+            <h2>Basses</h2>
+            <div class="row">
+              <div class="container col-sm-6">
+                <img src="src/dovy.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Dovydas Abarius</div>
+                </div>
+              </div>
+              <div class="container col-sm-6">
+                <img src="src/evan.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Evan Jones<a href="https://www.twitter.com/evanpeterjones"><img src="src/twit.png" id="pic"></img></a></div>
+                </div>
+              </div>
+            </div>
+            <p></p>
+            <div class="row">
+              <div class="container col-sm-6">
+                <img src="src/will.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Will Way</div>
+                </div>
+              </div>
+              <div class="container col-sm-6">
+                <img src="src/jared.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Jared Mark</div>
+                </div>
+              </div>
+            </div>
+            <p></p>
+          </div>
+        </div>
+        <div id="picsnvids" class="accordion">
+          <p></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sCkxos-8FrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <script src="https://apis.google.com/js/platform.js"></script>
+          <div class="g-ytsubscribe" data-channelid="UCfuD-pdgNqdkBfbCmB5M8rg" data-layout="full" data-count="hidden"></div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dsUhLd4Hfc4?start=6" frameborder="0" allowfullscreen></iframe>
+          <a href="https://www.collegeaca.com/content/watch-as-enharmonix-takes-you-to-church-with-ultralight-beam"><p>Article about Ultralight Beam</p></a>
+          <p>be sure to follow us on social media for more videos</p>
+        </div>
+        <div id="contact" class="accordion" style="display:hidden">
+          <h1>contact form goes here</h1>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p><b>Enharmonix</b> 2017</p>
+      <p style="font-size: 13px">Page by Evan Jones</p>
+      <a href="https://www.facebook.com/enharmonix"><img src="src/face.png" id="pic"></img></a>
+      <a href="https://twitter.com/asu_enharmonix"><img src="src/twit.png" id="pic"></img></a>
+      <a href="https://www.instagram.com/enharmonix/"><img src="src/insta.png" id="pic"></img></a>
+    </footer>
+  </body>
+  </html>
